@@ -1,0 +1,188 @@
+<!-- Consignes : 
+Créer la structure HTML puis intégrer le CSS pour créer une landing page (un site sur une seule page)
+
+Le site doit tenir sur une seule page
+
+Le choix des couleurs et des films est libre.
+
+Chacun doit faire sa propre page.-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecinéclub</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="logo1" src="http://associations.it-sudparis.eu/images/logos/HD/cine.png" alt="logo1">
+            <nav>
+                <ul>
+                    <li><a href="#slogan">Acceuil</a></li>
+                    <li><a href="#affiches">Films à l'affiche</a></li>
+                    <li><a href="#info-pratiques">Informations pratiques</a></li>
+                    <li><a href="#adresse">Lieu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="slogan">
+        <div>
+            <h1>CinéClub le cinéma pour tous</h1>
+        </div>
+    </section>
+
+    <section id="affiches" class="container">
+        <h2>les films à l'affiche</h2>
+        <div class="films">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTufIVuKwRPdKyac0km9DvqF5mi1V5mDCq2LuVsRhb85dkCV-h5"
+                    alt="image1">
+                <figcaption>
+                    <h3>Le Prince oublié</h3>
+                    <p>Djibi vit seul avec Sofia, sa fille de 8 ans. Tous les soirs, il invente une histoire pour
+                        l'endormir. Lorsque Sofia s'endort, ces récits extraordinaires prennent vie quelque part dans un
+                        monde imaginaire peuplé. Trois ans plus tard, l'entrée de Sofia au collège va marquer la fin de
+                        son enfance. Au grand désespoir de son père, elle n'a plus besoin de ses histoires le soir.
+                        Djibi va alors devoir accepter que sa fille grandisse et le prince du monde imaginaire va devoir
+                        trouver sa place.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLIv9nLSV8wGr_r25AS7RupuGOvSoqJ6j5n5dS7PwAKOJ5ptQp"
+                    alt="image2">
+                <figcaption>
+                    <h3>BAD BOYS 3</h3>
+                    <p>Marcus Burnett est maintenant inspecteur de police. Mike Lowery est, quant à lui, en pleine crise
+                        de la quarantaine. Ils s'unissent à nouveau lorsqu'un mercenaire albanais, dont ils ont tué le
+                        frère, leur promet une importante prime.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCnnKrifAGU3tfHc3ibfnUj9Hm_-PxJL3TIQP7bYMq_yhGp567"
+                    alt="image2">
+                <figcaption>
+                    <h3>10 jours sans Maman</h3>
+                    <p>Antoine, DRH d'une grande enseigne de bricolage, est en passe de devenir le numéro 1 de sa boîte.
+                        C'est le moment que choisit sa femme, Isabelle, pour faire une pause et prendre l'air quelques
+                        jours pour s'occuper d'elle. Antoine se retrouve alors seul à devoir gérer la maison et leurs
+                        quatre enfants. Il est vite dépassé par les événements ! 10 jours sans maman qui risquent bien
+                        de faire capoter sa nomination.</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="info-pratiques">
+        <div class="container">
+            <h2>Informations pratiques</h2>
+            <div class="infos">
+                <div class="avantages">
+                    <h3>Avantages cinéma</h3>
+                    <ol>
+                        <li>Salle climatisée</li>
+                        <li>Toutes les salles en IMAX</li>
+                        <li>Son Digital Prologic Surround </li>
+                    </ol>
+                </div>
+
+                <div class="tarifs">
+                    <h3>Tarifs</h3>
+                    <table>
+                        <tr>
+                            <td></td>
+                            <th colspan="2">Lundi au Vendredi </th>
+                            <th rowspan="2">WEEK-END</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <th>de 9h à 18h</th>
+                            <th>soirée</th>
+                        </tr>
+                        <tr>
+                            <th>-14</th>
+                            <td>5 €</td>
+                            <td>6 €</td>
+                            <td>6 €</td>
+                        </tr>
+                        <tr>
+                            <th>plein tarifs</th>
+                            <td>10 $</td>
+                            <td>12 $</td>
+                            <td>12.5 €</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="adresse">
+        <h2 class="container">Notre adresse</h2>
+        <div class="container">
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23107.10602103244!2d3.8937633!3d43.6192775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1598464916404!5m2!1sfr!2sfr"
+                    width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0">
+                </iframe>
+
+            </div>
+
+            <div id="adresse-postale">
+                <h3>Adresse</h3>
+                <h4>ClubCiné</h4>
+                <p>9 Rue Louis Fourestier , 34000 Montpellier</p>
+                <p>34090 Montpellier</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="container">Contacter nous</h2>
+        <div>
+            <form action="container">
+                <div>
+                    <input type="text" name="nom" placeholder="Nom">
+                    <input type="text" name="prenom" placeholder="Prénom">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="E-mail">
+                    <input type="telephone" name="telephone" placeholder="Téléphone">
+                </div>
+                <div>
+                    <input type="sujet" name="sujet" placeholder="Sujet">
+                </div>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <input type="button" value="Envoyer">
+            </form>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            @Copyright Amine Kerkoub 2020
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
